@@ -27,11 +27,14 @@ with col3:
     thalach = st.number_input('Max Heart Rate Achieved', min_value=60, max_value=220, value=150)
     exang = st.selectbox('Exercise Induced Angina', ['0: No', '1: Yes'])
 
-# Prediction
 if st.button('Predict'):
-    features = [int(age), int(sex[0]), int(cp[0]), int(trestbps), int(chol),
-                int(fbs[0]), int(restecg[0]), int(thalach), int(exang[0])]
-    prediction = model.predict([features])
+    features = np.array([
+        int(age), int(sex[0]), int(cp[0]), int(trestbps), int(chol),
+        int(fbs[0]), int(restecg[0]), int(thalach), int(exang[0])
+    ]).reshape(1, -1)  # Reshape ensures it's 2D
+    
+    # Now the model should accept this properly
+    prediction = model.predict(features)
 
     if prediction[0] == 1:
         st.error("The model predicts a high chance of heart disease.")
