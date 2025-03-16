@@ -45,17 +45,17 @@ if page == "Home":
 
     st.header("3. What to Do After a Heart Disease Diagnosis")
     st.write(
-        "1️⃣ **Understand Your Condition**\n"
+        "**Understand Your Condition**\n"
         "- Learn your specific type of heart disease and key symptoms to monitor.\n\n"
-        "2️⃣ **Follow Your Treatment Plan**\n"
+        "**Follow Your Treatment Plan**\n"
         "- Take medications as prescribed and attend follow-ups for adjustments.\n\n"
-        "3️⃣ **Adopt a Heart-Healthy Lifestyle**\n"
+        "**Adopt a Heart-Healthy Lifestyle**\n"
         "- Eat more fruits, veggies, lean protein, and whole grains.\n"
         "- Exercise regularly (with your doctor’s approval).\n"
         "- Quit smoking, limit alcohol, and manage stress.\n\n"
-        "4️⃣ **Watch for Warning Signs**\n"
+        "**Watch for Warning Signs**\n"
         "- Seek immediate help for chest pain, shortness of breath, or dizziness.\n\n"
-        "5️⃣ **Build a Support System**\n"
+        "**Build a Support System**\n"
         "- Consider cardiac rehab for guided recovery and lean on loved ones for emotional support."
     )
 
