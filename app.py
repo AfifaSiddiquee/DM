@@ -66,8 +66,14 @@ elif page == "Heart Disease Prediction":
 
     model = pickle.load(open('heart_disease_model.pkl', 'rb'))
 
-    st.title('Heart Disease Prediction')
+    # Center the title
+    st.markdown(
+        "<h1 style='text-align: center; color: red;'>Heart Disease Prediction</h1>",
+        unsafe_allow_html=True
+    )
+
     st.markdown('Enter the details below to predict the chances of heart disease:')
+
 
     # Input fields organized horizontally
     col1, col2, col3 = st.columns(3)
