@@ -8,7 +8,7 @@ page = st.sidebar.selectbox("Choose a page", ["Home", "Heart Disease Prediction"
 
 if page == "Home":
     # Home Page Content
-    st.title("Welcome to the Heart Disease Awareness & Prediction App")
+    st.title("Heart Health Hub: Know Your Risk, Change Your Future")
     st.image('heart.jpeg', use_container_width=True)
 
 
