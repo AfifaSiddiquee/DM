@@ -29,12 +29,8 @@ if page == "Home":
         "2. High cholesterol levels — Leads to plaque buildup in arteries.\n"
         "3. Smoking — Damages blood vessels and reduces oxygen supply.\n"
         "4. Diabetes — High blood sugar can damage blood vessels over time.\n"
-        "5. Obesity or being overweight — Increases the risk of high blood pressure, diabetes, and cholesterol issues.\n"
-        "6. Lack of physical activity — Weakens the heart and promotes weight gain.\n"
-        "7. Unhealthy diet — High in saturated fats, salt, and sugar can contribute to plaque buildup.\n"
-        "8. Excessive alcohol consumption — Can raise blood pressure and contribute to weight gain.\n"
-        "9. Chronic stress — May raise blood pressure and lead to unhealthy coping habits like overeating or smoking.\n"
-        "10. Poor sleep — Less than 7 hours a night can increase heart disease risk."
+        "5. Unhealthy diet — High in saturated fats, salt, and sugar can contribute to plaque buildup.\n"
+        "6. Chronic stress — May raise blood pressure and lead to unhealthy coping habits like overeating or smoking."
     )
     st.subheader("🔵 Non-Modifiable Risk Factors (Things you can't change):")
     st.write(
