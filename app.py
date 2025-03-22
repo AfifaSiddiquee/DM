@@ -41,7 +41,7 @@ if page == "Home":
         "5. Medical history — Previous heart conditions, stroke, or autoimmune diseases (like lupus) can heighten the risk."
     )
 
-    st.header("3. What to Do After a Heart Disease Diagnosis")
+    st.header("3. Your Action Plan After a Heart Disease Diagnosis")
     st.write(
         "**Understand Your Condition**\n"
         "- Learn your specific type of heart disease and key symptoms to monitor.\n\n"
