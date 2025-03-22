@@ -108,6 +108,15 @@ elif page == "Heart Disease Prediction":
         ca = st.selectbox('Number of Major Vessels Colored by Flourosopy', ['0', '1', '2', '3', '4'])
         thal = st.selectbox('Thalassemia', ['0: Normal', '1: Fixed Defect', '2: Reversible Defect'])
 
-    # Add Predict button
+    features = [
+        int(age), int(sex[0]), int(cp[0]), int(trestbps), int(chol), int(fbs[0]),
+        int(restecg[0]), int(thalach), int(exang[0]), float(oldpeak),
+        int(slope[0]), int(ca[0]), int(thal[0])
+    ]
+
     if st.button('Predict'):
-        st.success('Prediction button clicked!')
+        prediction = model.predict([features])
+        if prediction[0] == 1:
+            st.error('High chance of heart disease 😟')
+        else:
+            st.success('Low chance of heart disease 😊')
