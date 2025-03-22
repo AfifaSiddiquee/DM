@@ -11,7 +11,7 @@ page = st.sidebar.selectbox("Choose a page", ["Home", "About the App", "Heart Di
 if page == "Home":
     # Home Page Content
     st.markdown(
-    "<h2 style='text-align: center; color: white;'>Heart Health Hub: Know your Risk, Change Your Future</h2>",
+    "<h2 style='text-align: center; color: white; font-weight: bold;'>Heart Health Hub: Know your Risk, Change Your Future</h2>",
     unsafe_allow_html=True)
     st.image('heart.jpeg', use_container_width=True)
 
