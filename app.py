@@ -4,14 +4,12 @@ import streamlit as st
 st.set_page_config(page_title="Heart Disease Prediction App", layout="wide")
 
 # Sidebar navigation
-page = st.sidebar.selectbox("Choose a page", ["Home", "Heart Disease Prediction"])
+page = st.sidebar.selectbox("Choose a page", ["Home", "Heart Disease Prediction", "About the App"])
 
 if page == "Home":
     # Home Page Content
     st.title("Heart Health Hub: Know Risk, Change Your Future")
     st.image('heart.jpeg', use_container_width=True)
-
-
 
     st.header("1. What is Heart Disease?")
     st.write(
@@ -74,7 +72,6 @@ elif page == "Heart Disease Prediction":
 
     st.markdown('Enter the details below to predict the chances of heart disease:')
 
-
     # Input fields organized horizontally
     col1, col2, col3 = st.columns(3)
 
@@ -109,3 +106,19 @@ elif page == "Heart Disease Prediction":
             st.error('High chance of heart disease 😟')
         else:
             st.success('Low chance of heart disease 😊')
+
+elif page == "About the App":
+    st.title("📌 About the Heart Health Hub")
+    st.markdown(
+        """
+        ### 🩺 What Does This App Do?
+        - Predicts the likelihood of heart disease based on key health parameters.
+        - Provides a fast, easy-to-use prediction model.
+
+        ### 🔥 Key Features
+        - **Risk Assessment**: AI-powered heart disease prediction.
+        - **User-Friendly Interface**: Simplified design for easy input.
+        - **Quick Results**: Instant prediction within seconds.
+        - **Health Awareness**: Encourages understanding of heart disease risk factors.
+        """
+    )
