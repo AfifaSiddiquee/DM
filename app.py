@@ -112,8 +112,9 @@ elif page == "About the App":
     st.markdown(
         """
         ### 🩺 What Does This App Do?
-        - Predicts the likelihood of heart disease based on key health parameters.
-        - Provides a fast, easy-to-use prediction model.
+        The Heart Disease Prediction App combines technology and health data to estimate your potential risk of heart disease. By inputting key details like your blood pressure, cholesterol, and exercise habits, the app analyzes these factors using an intelligent machine learning model trained on medical datasets. It delivers quick, personalized predictions — giving you a clearer understanding of how your lifestyle and health indicators contribute to heart disease risk. This empowers you to take preventative action, adjust unhealthy habits, and discuss the results with a healthcare professional to pursue the best course of action for a healthier future.
+
+
 
         ### 🔥 Key Features
         - **Risk Assessment**: AI-powered heart disease prediction.
