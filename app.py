@@ -1,4 +1,6 @@
 import streamlit as st
+import pickle
+import numpy as np
 
 # Page Configuration
 st.set_page_config(page_title="Heart Disease Prediction App", layout="wide")
@@ -74,9 +76,6 @@ elif page == "About the App":
 
 elif page == "Heart Disease Prediction":
     # Load the trained model
-    import pickle
-    import numpy as np
-
     model = pickle.load(open('heart_disease_model.pkl', 'rb'))
 
     # Center the title
@@ -108,3 +107,7 @@ elif page == "Heart Disease Prediction":
         slope = st.selectbox('Slope of the Peak Exercise ST Segment', ['0: Upsloping', '1: Flat', '2: Downsloping'])
         ca = st.selectbox('Number of Major Vessels Colored by Flourosopy', ['0', '1', '2', '3', '4'])
         thal = st.selectbox('Thalassemia', ['0: Normal', '1: Fixed Defect', '2: Reversible Defect'])
+
+    # Add Predict button
+    if st.button('Predict'):
+        st.success('Prediction button clicked!')
