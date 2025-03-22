@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Heart Disease Prediction App", layout="wide")
 
 # Sidebar navigation
-page = st.sidebar.selectbox("Choose a page", ["Home", "Heart Disease Prediction", "About the App"])
+page = st.sidebar.selectbox("Choose a page", ["Home", "About the App", "Heart Disease Prediction"])
 
 if page == "Home":
     # Home Page Content
@@ -57,6 +57,21 @@ if page == "Home":
         "- Consider cardiac rehab for guided recovery and lean on loved ones for emotional support."
     )
 
+elif page == "About the App":
+    st.title("📌 About the Heart Health Hub")
+    st.markdown(
+        """
+        ### 🩺 What Does This App Do?
+        The Heart Disease Prediction App combines technology and health data to estimate your potential risk of heart disease. By inputting key details like your blood pressure, cholesterol, and exercise habits, the app analyzes these factors using an intelligent machine learning model trained on medical datasets. It delivers quick, personalized predictions — giving you a clearer understanding of how your lifestyle and health indicators contribute to heart disease risk. This empowers you to take preventative action, adjust unhealthy habits, and discuss the results with a healthcare professional to pursue the best course of action for a healthier future.
+
+        ### 🔥 Key Features
+        - **Risk Assessment**: AI-powered heart disease prediction.
+        - **User-Friendly Interface**: Simplified design for easy input.
+        - **Quick Results**: Instant prediction within seconds.
+        - **Health Awareness**: Encourages understanding of heart disease risk factors.
+        """
+    )
+
 elif page == "Heart Disease Prediction":
     # Load the trained model
     import pickle
@@ -93,33 +108,3 @@ elif page == "Heart Disease Prediction":
         slope = st.selectbox('Slope of the Peak Exercise ST Segment', ['0: Upsloping', '1: Flat', '2: Downsloping'])
         ca = st.selectbox('Number of Major Vessels Colored by Flourosopy', ['0', '1', '2', '3', '4'])
         thal = st.selectbox('Thalassemia', ['0: Normal', '1: Fixed Defect', '2: Reversible Defect'])
-
-    features = [
-        int(age), int(sex[0]), int(cp[0]), int(trestbps), int(chol), int(fbs[0]),
-        int(restecg[0]), int(thalach), int(exang[0]), float(oldpeak),
-        int(slope[0]), int(ca[0]), int(thal[0])
-    ]
-
-    if st.button('Predict'):
-        prediction = model.predict([features])
-        if prediction[0] == 1:
-            st.error('High chance of heart disease 😟')
-        else:
-            st.success('Low chance of heart disease 😊')
-
-elif page == "About the App":
-    st.title("📌 About the Heart Health Hub")
-    st.markdown(
-        """
-        ### 🩺 What Does This App Do?
-        The Heart Disease Prediction App combines technology and health data to estimate your potential risk of heart disease. By inputting key details like your blood pressure, cholesterol, and exercise habits, the app analyzes these factors using an intelligent machine learning model trained on medical datasets. It delivers quick, personalized predictions — giving you a clearer understanding of how your lifestyle and health indicators contribute to heart disease risk. This empowers you to take preventative action, adjust unhealthy habits, and discuss the results with a healthcare professional to pursue the best course of action for a healthier future.
-
-
-
-        ### 🔥 Key Features
-        - **Risk Assessment**: AI-powered heart disease prediction.
-        - **User-Friendly Interface**: Simplified design for easy input.
-        - **Quick Results**: Instant prediction within seconds.
-        - **Health Awareness**: Encourages understanding of heart disease risk factors.
-        """
-    )
