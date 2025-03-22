@@ -10,7 +10,9 @@ page = st.sidebar.selectbox("Choose a page", ["Home", "About the App", "Heart Di
 
 if page == "Home":
     # Home Page Content
-    st.title("Heart Health Hub: Know Risk, Change Your Future")
+    st.markdown(
+    "<h2 style='text-align: center; color: red;'>Heart Health Hub: Know your Risk, Change Your Future</h2>",
+    unsafe_allow_html=True)
     st.image('heart.jpeg', use_container_width=True)
 
     st.header("1. What is Heart Disease?")
