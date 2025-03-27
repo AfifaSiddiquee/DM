@@ -7,16 +7,29 @@ st.set_page_config(page_title="CardioMetabolic Care", layout="wide")
 
 # Sidebar for Navigation
 st.sidebar.title("🔍 Choose a Health Hub")
-hub = st.sidebar.radio("Select Hub", ["Heart Health Hub", "Diabetes Health Hub"])
-
-# Sidebar Navigation for Pages
-if hub == "Heart Health Hub":
-    page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Heart Disease Prediction"])
-elif hub == "Diabetes Health Hub":
-    page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Diabetes Disease Prediction"])
+hub = st.sidebar.radio("Select Hub", ["Main Home Page", "Heart Health Hub", "Diabetes Health Hub"])
 
 # --------- MAIN PAGE CONTENT --------- #
-if hub == "Heart Health Hub":
+if hub == "Main Home Page":
+    st.markdown(
+        "<h1 style='text-align: center; color: darkblue;'>Welcome to CardioMetabolic Care</h1>", 
+        unsafe_allow_html=True
+    )
+    st.image('main_health.jpg', use_container_width=True)
+
+    st.write("""
+    **CardioMetabolic Care** is your personal health assistant.  
+    This platform offers **Heart Disease & Diabetes Prediction** based on machine learning models.  
+
+    🔹 **Heart Health Hub** → Learn about heart diseases & predict risks.  
+    🔹 **Diabetes Health Hub** → Learn about diabetes & predict risks.  
+
+    👉 **Select a hub from the sidebar to get started!**
+    """)
+
+elif hub == "Heart Health Hub":
+    page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Heart Disease Prediction"])
+
     if page == "Home":
         st.markdown(
             "<h2 style='text-align: center; color: red;'>Heart Health Hub: Know your Risk, Change Your Future</h2>",
@@ -97,6 +110,8 @@ if hub == "Heart Health Hub":
                 st.success('Low chance of heart disease 😊')
 
 elif hub == "Diabetes Health Hub":
+    page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Diabetes Disease Prediction"])
+
     if page == "Home":
         st.markdown("<h2 style='text-align: center; color: blue;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
         st.image('diabetes.jpg', use_container_width=True)
