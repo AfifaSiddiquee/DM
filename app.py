@@ -18,7 +18,7 @@ elif hub == "Diabetes Health Hub":
 # --------- MAIN PAGE CONTENT --------- #
 if page == "Home":
     st.markdown("<h1 style='text-align: center; color: #0066cc;'>CardioMetabolic Care</h1>", unsafe_allow_html=True)
-    st.image('cardio_banner.jpg', use_column_width=True)
+    
 
     st.write("""
     ## 🔬 What is CardioMetabolic Care?
