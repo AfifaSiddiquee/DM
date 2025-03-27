@@ -191,8 +191,9 @@ elif hub == "Diabetes Health Hub":
     page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Diabetes Disease Prediction"])
 
     if page == "Home":
-        st.markdown("<h2 style='text-align: center; color: blue;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
-        
+        st.markdown("<h2 style='text-align: center; color: white;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
+
+        st.header("1. What is Diabetes?")
         st.write("""
         **Diabetes**  is a chronic health condition that affects how the body processes blood sugar (glucose). Glucose is the main energy source for our bodies, and insulin, a hormone produced by the pancreas, helps regulate it.
 
