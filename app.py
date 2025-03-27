@@ -16,8 +16,6 @@ if hub == "Main Home Page":
         unsafe_allow_html=True
     )
 
-    st.image('main_health.jpg', use_container_width=True)
-
     st.markdown("""
         ### **What is CardioMetabolic Care?**  
         CardioMetabolic Care is an advanced health assessment platform designed to predict and analyze risks related to **heart disease** and **diabetes**. By leveraging data-driven insights and machine learning models, it empowers users to take proactive steps toward better health.  
