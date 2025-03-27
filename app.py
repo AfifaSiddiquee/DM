@@ -5,46 +5,19 @@ import numpy as np
 # Page Configuration
 st.set_page_config(page_title="CardioMetabolic Care", layout="wide")
 
-# Initialize session state for navigation if it doesn't exist
-if "hub" not in st.session_state:
-    st.session_state.hub = "Heart Health Hub"
-if "page" not in st.session_state:
-    st.session_state.page = "Home"
-
 # Sidebar for Navigation
 st.sidebar.title("🔍 Choose a Health Hub")
-selected_hub = st.sidebar.radio("Select Hub", ["Heart Health Hub", "Diabetes Health Hub"], index=0)
+hub = st.sidebar.radio("Select Hub", ["Heart Health Hub", "Diabetes Health Hub"])
 
 # Sidebar Navigation for Pages
-if selected_hub == "Heart Health Hub":
-    selected_page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Heart Disease Prediction"])
-elif selected_hub == "Diabetes Health Hub":
-    selected_page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Diabetes Disease Prediction"])
-
-# Update session state only if there's a change
-if selected_hub != st.session_state.hub or selected_page != st.session_state.page:
-    st.session_state.hub = selected_hub
-    st.session_state.page = selected_page
+if hub == "Heart Health Hub":
+    page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Heart Disease Prediction"])
+elif hub == "Diabetes Health Hub":
+    page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Diabetes Disease Prediction"])
 
 # --------- MAIN PAGE CONTENT --------- #
-if st.session_state.page == "Home":
-    st.markdown("<h1 style='text-align: center; color: #0066cc;'>CardioMetabolic Care</h1>", unsafe_allow_html=True)
-    
-    st.write("""
-    ## 🔬 What is CardioMetabolic Care?
-    **CardioMetabolic Care** is an advanced health assessment platform designed to predict and analyze risks related to **heart disease** and **diabetes**. 
-    By leveraging **data-driven insights** and **machine learning models**, it empowers users to take proactive steps toward better health.
-
-    ### 🚀 What Does It Do?
-    The app provides **risk predictions for cardiovascular diseases and diabetes** based on user health data. It offers:
-    - Personalized insights 📊
-    - Preventive recommendations ✅
-    - Real-time risk assessment 🏥
-    """)
-
-# --------- HEART HEALTH HUB --------- #
-elif st.session_state.hub == "Heart Health Hub":
-    if st.session_state.page == "Home":
+if hub == "Heart Health Hub":
+    if page == "Home":
         st.markdown(
             "<h2 style='text-align: center; color: red;'>Heart Health Hub: Know your Risk, Change Your Future</h2>",
             unsafe_allow_html=True
@@ -57,14 +30,33 @@ elif st.session_state.hub == "Heart Health Hub":
         heart attacks, arrhythmias, and heart failure. It remains a leading cause of death worldwide.
         """)
 
-    elif st.session_state.page == "About the App":
+        st.header("2. Risk Factors for Heart Disease")
+        st.subheader("🔴 Modifiable Risk Factors:")
+        st.write("""
+        - High blood pressure (Hypertension)  
+        - High cholesterol levels  
+        - Smoking  
+        - Diabetes  
+        - Poor diet  
+        - Stress  
+        """)
+
+        st.subheader("🔵 Non-Modifiable Risk Factors:")
+        st.write("""
+        - Age  
+        - Gender  
+        - Family history  
+        - Ethnicity  
+        """)
+
+    elif page == "About the App":
         st.title("📌 About the Heart Health Hub")
         st.write("""
         This app predicts heart disease risk using machine learning. It assesses various health parameters 
         and provides an estimated risk score, helping users take preventive actions.
         """)
 
-    elif st.session_state.page == "Heart Disease Prediction":
+    elif page == "Heart Disease Prediction":
         model = pickle.load(open('heart_disease_model.pkl', 'rb'))
 
         st.markdown("<h1 style='text-align: center; color: red;'>Heart Disease Prediction</h1>", unsafe_allow_html=True)
@@ -104,9 +96,8 @@ elif st.session_state.hub == "Heart Health Hub":
             else:
                 st.success('Low chance of heart disease 😊')
 
-# --------- DIABETES HEALTH HUB --------- #
-elif st.session_state.hub == "Diabetes Health Hub":
-    if st.session_state.page == "Home":
+elif hub == "Diabetes Health Hub":
+    if page == "Home":
         st.markdown("<h2 style='text-align: center; color: blue;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
         st.image('diabetes.jpg', use_container_width=True)
 
@@ -115,13 +106,13 @@ elif st.session_state.hub == "Diabetes Health Hub":
         If untreated, it can lead to severe complications.
         """)
 
-    elif st.session_state.page == "About the App":
+    elif page == "About the App":
         st.title("📌 About the Diabetes Health Hub")
         st.write("""
         The Diabetes Prediction tool helps estimate the likelihood of developing diabetes based on 
         user input data, promoting awareness and early prevention.
         """)
 
-    elif st.session_state.page == "Diabetes Disease Prediction":
+    elif page == "Diabetes Disease Prediction":
         st.markdown("<h1 style='text-align: center; color: blue;'>Diabetes Prediction</h1>", unsafe_allow_html=True)
         st.write("🚧 **Diabetes prediction model is under development! Stay tuned.** 🚧")
