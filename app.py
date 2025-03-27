@@ -16,15 +16,34 @@ if hub == "Main Home Page":
         unsafe_allow_html=True
     )
 
+    st.image('main_health.jpg', use_container_width=True)
 
-    st.write("""
-    **CardioMetabolic Care** is your personal health assistant.  
-    This platform offers **Heart Disease & Diabetes Prediction** based on machine learning models.  
+    st.markdown("""
+        ### **What is CardioMetabolic Care?**  
+        CardioMetabolic Care is an advanced health assessment platform designed to predict and analyze risks related to **heart disease** and **diabetes**. By leveraging data-driven insights and machine learning models, it empowers users to take proactive steps toward better health.  
 
-    🔹 **Heart Health Hub** → Learn about heart diseases & predict risks.  
-    🔹 **Diabetes Health Hub** → Learn about diabetes & predict risks.  
+        ### **What Does It Do?**  
+        The app provides **risk predictions for cardiovascular diseases and diabetes** based on user health data. It offers personalized insights, preventive recommendations, and real-time risk assessment to help individuals and healthcare professionals make informed decisions.  
 
-    👉 **Select a hub from the sidebar to get started!**
+        ### **Inside CardioMetabolic Care**  
+        The app consists of two specialized tools:  
+
+        1. **🫀 Heart Disease Predictor**  
+           - Uses medical history, lifestyle factors, and key biomarkers to assess an individual's likelihood of developing cardiovascular diseases.  
+           - Provides preventive recommendations based on risk levels.  
+
+        2. **💙 Diabetes Risk Analyzer**  
+           - Evaluates personal health metrics to predict the chances of developing diabetes.  
+           - Offers lifestyle suggestions and early intervention strategies.  
+
+        ### **Impact on the Healthcare Industry**  
+        - **🔍 Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
+        - **📊 Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
+        - **💡 Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
+
+        CardioMetabolic Care aims to **bridge the gap between technology and healthcare**, empowering individuals to take charge of their well-being with science-backed insights.  
+
+        👉 **Select a hub from the sidebar to get started!**
     """)
 
 elif hub == "Heart Health Hub":
