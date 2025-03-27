@@ -194,16 +194,89 @@ elif hub == "Diabetes Health Hub":
         st.markdown("<h2 style='text-align: center; color: blue;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
         st.image('diabetes.jpg', use_container_width=True)
         st.write("""
-        **Diabetes** is a chronic condition that affects how your body processes blood sugar (glucose). 
-        If untreated, it can lead to severe complications.
+        **Diabetes**  is a chronic health condition that affects how the body processes blood sugar (glucose). Glucose is the main energy source for our bodies, and insulin, a hormone produced by the pancreas, helps regulate it.
+
+         When insulin production is insufficient or the body becomes resistant to it, blood sugar levels rise, leading to diabetes. If left unmanaged, diabetes can cause serious health complications, including heart disease, kidney failure, nerve damage, and vision loss.
         """)
+        
+        st.header("2. What are the Risk Factors for Diabetes?")
+        st.write("""
+        Certain factors can increase your risk of developing diabetes, including:
+
+        - Unhealthy Diet – High sugar and processed food intake
+        - Physical Inactivity – Lack of exercise leading to weight gain
+        - Obesity – A major risk factor for Type 2 diabetes
+        - Family History – Having a close relative with diabetes
+        - High Blood Pressure & Cholesterol – Indicators of metabolic issues
+        - Gestational Diabetes History – Increases risk of Type 2 diabetes later in life
+
+          Early screening and lifestyle changes can help lower your risk!    """)
+
+        st.header("Your Action Plan After a Diabetes Diagnosis")
+        st.write("""
+        If you've been diagnosed with diabetes, here are the key steps to manage your condition and maintain a healthy life:
+
+        Step 1: Consult Your Doctor – Work with a healthcare professional to create a treatment plan.
+        Step 2: Adopt a Healthy Diet – Reduce sugar intake, eat fiber-rich foods, and maintain portion control.
+        Step 3: Stay Active – Regular physical activity helps regulate blood sugar levels.
+        Step 4: Take Medications as Prescribed – Follow your doctor’s advice on insulin or other medications.
+        Step 5: Monitor Blood Sugar Regularly – Keep track of glucose levels to adjust your lifestyle accordingly.
+        Step 6: Stay Educated – Learn about your condition and make informed decisions.""")
+
 
     elif page == "About the App":
-        st.title("📌 About the Diabetes Health Hub")
-        st.write("""
-        The Diabetes Prediction tool helps estimate the likelihood of developing diabetes based on 
-        user input data, promoting awareness and early prevention.
-        """)
+        st.title("About the Diabetes Health Hub")
+        st.markdown(
+        """
+
+        ### 🩺 What Does This App Do?
+        The Diabetes Disease Prediction App leverages advanced technology and health data to assess your risk of developing diabetes. By entering key health metrics such as blood sugar levels, BMI, physical activity, and family history, the app utilizes a powerful machine learning model trained on medical datasets to provide an instant risk evaluation.
+
+        With quick and personalized predictions, this app helps you understand how your lifestyle and health factors influence your diabetes risk. It empowers you to take proactive steps, make informed lifestyle adjustments, and consult a healthcare professional for personalized guidance—ensuring a healthier, more informed future.
+
+
+
+        ### Essential Capabilities
+        - **AI-Powered Diabetes Risk Assessment**: Analyze key health factors to predict your likelihood of developing diabetes.
+        - **Personalized Health Insights**: Get tailored recommendations based on your input.
+        - **Data-Driven Decision Making**: Utilize machine learning to identify risk patterns.
+        - **User-Friendly Interface**: Simple, intuitive design for easy navigation.
+        - **Preventive Health Approach**: Encourages early detection and lifestyle improvements.
+        
+        ### Understanding the Features
+        Each input in the prediction form has a specific medical significance:
+        - **Age**: Heart disease risk increases with age.
+        - **Sex**: Men are generally at higher risk earlier in life; women's risk rises after menopause.
+        - **Chest Pain Type (CP)**: 
+          - 0: Typical Angina — Chest pain due to reduced blood flow to the heart.
+          - 1: Atypical Angina — Chest pain that doesn’t fit the classic pattern.
+          - 2: Non-anginal Pain — Pain unrelated to the heart.
+          - 3: Asymptomatic — No chest pain.
+        - **Resting Blood Pressure (Trestbps)**: High blood pressure can overwork the heart.
+        - **Cholesterol Level (Chol)**: High cholesterol leads to plaque buildup in arteries.
+        - **Fasting Blood Sugar (FBS)**: > 120 mg/dl indicates possible diabetes, increasing heart risk.
+        - **Resting Electrocardiographic Results (Restecg)**: Measures heart's electrical activity.
+          - 0: Normal
+          - 1: ST-T wave abnormality (possible heart problem)
+          - 2: Left ventricular hypertrophy (thickened heart muscle)
+        - **Maximum Heart Rate Achieved (Thalach)**: Lower rates might indicate heart issues.
+        - **Exercise Induced Angina (Exang)**: Chest pain triggered by exercise.
+        - **ST Depression (Oldpeak)**: Indicates heart stress during exercise.
+        - **Slope of the Peak Exercise ST Segment (Slope)**:
+          - 0: Upsloping — Better heart health.
+          - 1: Flat — Higher risk.
+          - 2: Downsloping — Potential heart disease.
+        - **Number of Major Vessels Colored by Fluoroscopy (CA)**: More blocked vessels indicate higher risk.
+        - **Thalassemia (Thal)**:
+          - 0: Normal blood flow.
+          - 1: Fixed defect — Permanent damage.
+          - 2: Reversible defect — Blood flow can improve.
+
+        This breakdown helps you understand how each feature affects heart disease prediction — empowering you to take control of your heart health.
+        """
+    )
+
+    
 
     elif page == "Diabetes Disease Prediction":
         st.markdown("<h1 style='text-align: center; color: blue;'>Diabetes Prediction</h1>", unsafe_allow_html=True)
