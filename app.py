@@ -192,7 +192,7 @@ elif hub == "Diabetes Health Hub":
 
     if page == "Home":
         st.markdown("<h2 style='text-align: center; color: white;'>Diabetes Health Hub: Your Path to a Healthier Life</h2>", unsafe_allow_html=True)
-
+        st.image('diabetics.jpeg', use_container_width=True)
         st.header("1. What is Diabetes?")
         st.write("""
         **Diabetes**  is a chronic health condition that affects how the body processes blood sugar (glucose). Glucose is the main energy source for our bodies, and insulin, a hormone produced by the pancreas, helps regulate it.
