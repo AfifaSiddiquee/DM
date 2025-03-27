@@ -200,7 +200,7 @@ elif hub == "Diabetes Health Hub":
          When insulin production is insufficient or the body becomes resistant to it, blood sugar levels rise, leading to diabetes. If left unmanaged, diabetes can cause serious health complications, including heart disease, kidney failure, nerve damage, and vision loss.
         """)
         
-        st.header("2. What are the Risk Factors for Diabetes?")
+        st.header("🔴2. What are the Risk Factors for Diabetes?")
         st.write("""
         Certain factors can increase your risk of developing diabetes, including:
 
