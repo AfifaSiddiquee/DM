@@ -69,8 +69,7 @@ elif hub == "Heart Health Hub":
         3. Smoking — Damages blood vessels and reduces oxygen supply.  
         4. Diabetes — High blood sugar can damage blood vessels over time.  
         5. Unhealthy diet — High in saturated fats, salt, and sugar can contribute to plaque buildup.  
-        6. Chronic stress — May raise blood pressure and lead to unhealthy coping habits like overeating or smoking.
-        """)
+        6. Chronic stress — May raise blood pressure and lead to unhealthy coping habits like overeating or smoking.""")
 
         st.subheader("🔵 Non-Modifiable Risk Factors (Things you can't change)")
         st.write("""
