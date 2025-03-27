@@ -15,7 +15,7 @@ if hub == "Main Home Page":
         "<h1 style='text-align: center; color: darkblue;'>Welcome to CardioMetabolic Care</h1>", 
         unsafe_allow_html=True
     )
-    st.image('main_health.jpg', use_container_width=True)
+
 
     st.write("""
     **CardioMetabolic Care** is your personal health assistant.  
