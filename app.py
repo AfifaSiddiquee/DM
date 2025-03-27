@@ -49,7 +49,7 @@ elif hub == "Heart Health Hub":
 
     if page == "Home":
         st.markdown(
-            "<h2 style='text-align: center; color: red;'>Heart Health Hub: Know Your Risk, Change Your Future</h2>",
+            "<h2 style='text-align: center; color: white;'>Heart Health Hub: Know Your Risk, Change Your Future</h2>",
             unsafe_allow_html=True
         )
         st.image('heart.jpeg', use_container_width=True)
@@ -101,7 +101,7 @@ elif hub == "Heart Health Hub":
 
 
     elif page == "About the App":
-        st.title("📌 About the Heart Health Hub")
+        st.title("About the Heart Health Hub")
         st.markdown(
         """
 
