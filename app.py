@@ -35,9 +35,9 @@ if hub == "Main Home Page":
            - Offers lifestyle suggestions and early intervention strategies.  
 
         ### **Impact on the Healthcare Industry**  
-        - ** Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
-        - ** Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
-        - ** Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
+        - **Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
+        - **Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
+        - **Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
 
         CardioMetabolic Care aims to **bridge the gap between technology and healthcare**, empowering individuals to take charge of their well-being with science-backed insights.  
 
