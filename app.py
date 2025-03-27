@@ -12,7 +12,7 @@ hub = st.sidebar.radio("Select Hub", ["Main Home Page", "Heart Health Hub", "Dia
 # --------- MAIN PAGE CONTENT --------- #
 if hub == "Main Home Page":
     st.markdown(
-        "<h1 style='text-align: center; color: white;'>🔬 Welcome to CardioMetabolic Care</h1>", 
+        "<h1 style='text-align: center; color: white;'>🩺 Welcome to CardioMetabolic Care</h1>", 
         unsafe_allow_html=True
     )
 
@@ -23,7 +23,7 @@ if hub == "Main Home Page":
         ### **💡What Does It Do?**  
         The app provides **risk predictions for cardiovascular diseases and diabetes** based on user health data. It offers personalized insights, preventive recommendations, and real-time risk assessment to help individuals and healthcare professionals make informed decisions.  
 
-        ### **Inside CardioMetabolic Care**  
+        ### **💡Inside CardioMetabolic Care**  
         The app consists of two specialized tools:  
 
         1. **🫀 Heart Disease Predictor**  
