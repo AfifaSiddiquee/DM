@@ -218,10 +218,15 @@ elif hub == "Diabetes Health Hub":
         If you've been diagnosed with diabetes, here are the key steps to manage your condition and maintain a healthy life:
 
         Step 1: Consult Your Doctor – Work with a healthcare professional to create a treatment plan.
+        
         Step 2: Adopt a Healthy Diet – Reduce sugar intake, eat fiber-rich foods, and maintain portion control.
+        
         Step 3: Stay Active – Regular physical activity helps regulate blood sugar levels.
+        
         Step 4: Take Medications as Prescribed – Follow your doctor’s advice on insulin or other medications.
+        
         Step 5: Monitor Blood Sugar Regularly – Keep track of glucose levels to adjust your lifestyle accordingly.
+        
         Step 6: Stay Educated – Learn about your condition and make informed decisions.""")
 
 
