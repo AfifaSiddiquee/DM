@@ -55,30 +55,53 @@ elif hub == "Heart Health Hub":
         st.image('heart.jpeg', use_container_width=True)
 
         st.header("1. What is Heart Disease?")
-        st.write("""
-        Heart disease refers to a range of conditions that affect the heart’s function, including coronary artery disease, 
-        heart attacks, arrhythmias, and heart failure. It remains a leading cause of death worldwide.
-        """)
+        st.write(
+        "Heart disease is an umbrella term for a range of conditions that affect the heart's structure and function. "
+        "It includes coronary artery disease, heart attacks, arrhythmias, heart failure, and more. Heart disease remains "
+        "one of the deadliest health challenges worldwide, responsible for around 1 in 5 deaths — claiming millions of lives each year."
+    )
 
-        st.header("2. Risk Factors for Heart Disease")
+        st.header("2. What are the Risk Factors for Heart Disease?")
         st.subheader("🔴 Modifiable Risk Factors:")
         st.write("""
-        - High blood pressure (Hypertension)  
-        - High cholesterol levels  
-        - Smoking  
-        - Diabetes  
-        - Poor diet  
-        - Stress  
+        1. High blood pressure (Hypertension) — Puts extra strain on the heart.  
+        2. High cholesterol levels — Leads to plaque buildup in arteries.  
+        3. Smoking — Damages blood vessels and reduces oxygen supply.  
+        4. Diabetes — High blood sugar can damage blood vessels over time.  
+        5. Unhealthy diet — High in saturated fats, salt, and sugar can contribute to plaque buildup.  
+        6. Chronic stress — May raise blood pressure and lead to unhealthy coping habits like overeating or smoking.
         """)
 
-        st.subheader("🔵 Non-Modifiable Risk Factors:")
+        st.subheader("🔵 Non-Modifiable Risk Factors (Things you can't change)")
         st.write("""
-        - Age  
-        - Gender  
-        - Family history  
-        - Ethnicity  
+        1. Age — Risk increases as you get older.  
+        2. Gender — Men generally have a higher risk earlier in life, though women’s risk rises after menopause.  
+        3. Family history — A family history of heart disease increases your chances.  
+        4. Ethnicity — Some groups, like South Asians, African Americans, and Hispanics, may have higher risks.  
+        5. Medical history — Previous heart conditions, stroke, or autoimmune diseases (like lupus) can heighten the risk.
         """)
+        st.header("3. Your Action Plan After a Heart Disease Diagnosis")
+        st.write("""
+       **Understand Your Condition**  
+       - Learn your specific type of heart disease and key symptoms to monitor.  
 
+       **Follow Your Treatment Plan**  
+       - Take medications as prescribed and attend follow-ups for adjustments.  
+
+       **Adopt a Heart-Healthy Lifestyle**  
+      - Eat more fruits, veggies, lean protein, and whole grains.  
+      - Exercise regularly (with your doctor’s approval).  
+      - Quit smoking, limit alcohol, and manage stress.  
+
+      **Watch for Warning Signs**  
+      - Seek immediate help for chest pain, shortness of breath, or dizziness.  
+
+      **Build a Support System**  
+      - Consider cardiac rehab for guided recovery and lean on loved ones for emotional support.
+      """)
+
+
+    
     elif page == "About the App":
         st.title("📌 About the Heart Health Hub")
         st.write("""
