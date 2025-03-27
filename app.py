@@ -191,7 +191,7 @@ elif hub == "Diabetes Health Hub":
     page = st.sidebar.selectbox("Navigate", ["Home", "About the App", "Diabetes Disease Prediction"])
 
     if page == "Home":
-        st.markdown("<h2 style='text-align: center; color: white;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; color: white;'>Diabetes Health Hub: Your Path to a Healthier Life</h2>", unsafe_allow_html=True)
 
         st.header("1. What is Diabetes?")
         st.write("""
