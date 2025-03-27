@@ -12,15 +12,15 @@ hub = st.sidebar.radio("Select Hub", ["Main Home Page", "Heart Health Hub", "Dia
 # --------- MAIN PAGE CONTENT --------- #
 if hub == "Main Home Page":
     st.markdown(
-        "<h1 style='text-align: center; color: white;'>Welcome to CardioMetabolic Care</h1>", 
+        "<h1 style='text-align: center; color: white;'>🔬 Welcome to CardioMetabolic Care</h1>", 
         unsafe_allow_html=True
     )
 
     st.markdown("""
-        ### **What is CardioMetabolic Care?**  
+        ### **💡What is CardioMetabolic Care?**  
         CardioMetabolic Care is an advanced health assessment platform designed to predict and analyze risks related to **heart disease** and **diabetes**. By leveraging data-driven insights and machine learning models, it empowers users to take proactive steps toward better health.  
 
-        ### **What Does It Do?**  
+        ### **💡What Does It Do?**  
         The app provides **risk predictions for cardiovascular diseases and diabetes** based on user health data. It offers personalized insights, preventive recommendations, and real-time risk assessment to help individuals and healthcare professionals make informed decisions.  
 
         ### **Inside CardioMetabolic Care**  
@@ -34,7 +34,7 @@ if hub == "Main Home Page":
            - Evaluates personal health metrics to predict the chances of developing diabetes.  
            - Offers lifestyle suggestions and early intervention strategies.  
 
-        ### **Impact on the Healthcare Industry**  
+        ### **💡Impact on the Healthcare Industry**  
         - **Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
         - **Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
         - **Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
