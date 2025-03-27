@@ -20,27 +20,6 @@ if hub == "Main Home Page":
         ### **💡What is CardioMetabolic Care?**  
         CardioMetabolic Care is an advanced health assessment platform designed to predict and analyze risks related to **heart disease** and **diabetes**. By leveraging data-driven insights and machine learning models, it empowers users to take proactive steps toward better health.  
 
-        ### **💡What Does It Do?**  
-        The app provides **risk predictions for cardiovascular diseases and diabetes** based on user health data. It offers personalized insights, preventive recommendations, and real-time risk assessment to help individuals and healthcare professionals make informed decisions.  
-
-        ### **💡Inside CardioMetabolic Care**  
-        The app consists of two specialized tools:  
-
-        1. **🫀 Heart Disease Predictor**  
-           - Uses medical history, lifestyle factors, and key biomarkers to assess an individual's likelihood of developing cardiovascular diseases.  
-           - Provides preventive recommendations based on risk levels.  
-
-        2. **🫀 Diabetes Risk Analyzer**  
-           - Evaluates personal health metrics to predict the chances of developing diabetes.  
-           - Offers lifestyle suggestions and early intervention strategies.  
-
-        ### **💡Impact on the Healthcare Industry**  
-        - **Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
-        - **Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
-        - **Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
-
-        CardioMetabolic Care aims to **bridge the gap between technology and healthcare**, empowering individuals to take charge of their well-being with science-backed insights.  
-
         👉 **Select a hub from the sidebar to get started!**
     """)
 
@@ -49,104 +28,42 @@ elif hub == "Heart Health Hub":
 
     if page == "Home":
         st.markdown(
-            "<h2 style='text-align: center; color: red;'>Heart Health Hub: Know your Risk, Change Your Future</h2>",
+            "<h2 style='text-align: center; color: red;'>Heart Health Hub: Know Your Risk, Change Your Future</h2>",
             unsafe_allow_html=True
         )
         st.image('heart.jpeg', use_container_width=True)
 
         st.header("1. What is Heart Disease?")
         st.write(
-        "Heart disease is an umbrella term for a range of conditions that affect the heart's structure and function. "
-        "It includes coronary artery disease, heart attacks, arrhythmias, heart failure, and more. Heart disease remains "
-        "one of the deadliest health challenges worldwide, responsible for around 1 in 5 deaths — claiming millions of lives each year."
-    )
+            "Heart disease is an umbrella term for a range of conditions affecting the heart's structure and function, including coronary artery disease, heart attacks, and arrhythmias."
+        )
 
-        st.header("2. What are the Risk Factors for Heart Disease?")
+        st.header("2. What are the Risk Factors?")
         st.subheader("🔴 Modifiable Risk Factors:")
         st.write("""
-        1. High blood pressure (Hypertension) — Puts extra strain on the heart.  
-        2. High cholesterol levels — Leads to plaque buildup in arteries.  
-        3. Smoking — Damages blood vessels and reduces oxygen supply.  
-        4. Diabetes — High blood sugar can damage blood vessels over time.  
-        5. Unhealthy diet — High in saturated fats, salt, and sugar can contribute to plaque buildup.  
-        6. Chronic stress — May raise blood pressure and lead to unhealthy coping habits like overeating or smoking.""")
-
-        st.subheader("🔵 Non-Modifiable Risk Factors (Things you can't change)")
-        st.write("""
-        1. Age — Risk increases as you get older.  
-        2. Gender — Men generally have a higher risk earlier in life, though women’s risk rises after menopause.  
-        3. Family history — A family history of heart disease increases your chances.  
-        4. Ethnicity — Some groups, like South Asians, African Americans, and Hispanics, may have higher risks.  
-        5. Medical history — Previous heart conditions, stroke, or autoimmune diseases (like lupus) can heighten the risk.
+        - High blood pressure  
+        - High cholesterol  
+        - Smoking  
+        - Diabetes  
+        - Unhealthy diet  
+        - Chronic stress  
         """)
-        st.header("3. Your Action Plan After a Heart Disease Diagnosis")
+
+        st.subheader("🔵 Non-Modifiable Risk Factors:")
         st.write("""
-       **Understand Your Condition**  
-       - Learn your specific type of heart disease and key symptoms to monitor.  
+        - Age  
+        - Gender  
+        - Family history  
+        - Ethnicity  
+        - Medical history  
+        """)
 
-       **Follow Your Treatment Plan**  
-       - Take medications as prescribed and attend follow-ups for adjustments.  
+    elif page == "About the App":
+        st.title("📌 About the Heart Health Hub")
+        st.write("""
+        This app uses machine learning to assess heart disease risk based on user health metrics.
+        """)
 
-       **Adopt a Heart-Healthy Lifestyle**  
-      - Eat more fruits, veggies, lean protein, and whole grains.  
-      - Exercise regularly (with your doctor’s approval).  
-      - Quit smoking, limit alcohol, and manage stress.  
-
-      **Watch for Warning Signs**  
-      - Seek immediate help for chest pain, shortness of breath, or dizziness.  
-
-      **Build a Support System**  
-      - Consider cardiac rehab for guided recovery and lean on loved ones for emotional support.
-      """)
-
-
-    
-   elif page == "About the App":
-    st.title("📌 About the Heart Health Hub")
-    st.markdown(
-        """
-
-        ### 🩺 What Does This App Do?
-        The Heart Disease Prediction App combines technology and health data to estimate your potential risk of heart disease. By inputting key details like your blood pressure, cholesterol, and exercise habits, the app analyzes these factors using an intelligent machine learning model trained on medical datasets. It delivers quick, personalized predictions — giving you a clearer understanding of how your lifestyle and health indicators contribute to heart disease risk. This empowers you to take preventative action, adjust unhealthy habits, and discuss the results with a healthcare professional to pursue the best course of action for a healthier future.
-
-        ### Essential Capabilities
-        - **Risk Assessment**: AI-powered heart disease prediction.
-        - **User-Friendly Interface**: Simplified design for easy input.
-        - **Quick Results**: Instant prediction within seconds.
-        - **Health Awareness**: Encourages understanding of heart disease risk factors.
-        
-        ### Understanding the Features
-        Each input in the prediction form has a specific medical significance:
-        - **Age**: Heart disease risk increases with age.
-        - **Sex**: Men are generally at higher risk earlier in life; women's risk rises after menopause.
-        - **Chest Pain Type (CP)**: 
-          - 0: Typical Angina — Chest pain due to reduced blood flow to the heart.
-          - 1: Atypical Angina — Chest pain that doesn’t fit the classic pattern.
-          - 2: Non-anginal Pain — Pain unrelated to the heart.
-          - 3: Asymptomatic — No chest pain.
-        - **Resting Blood Pressure (Trestbps)**: High blood pressure can overwork the heart.
-        - **Cholesterol Level (Chol)**: High cholesterol leads to plaque buildup in arteries.
-        - **Fasting Blood Sugar (FBS)**: > 120 mg/dl indicates possible diabetes, increasing heart risk.
-        - **Resting Electrocardiographic Results (Restecg)**: Measures heart's electrical activity.
-          - 0: Normal
-          - 1: ST-T wave abnormality (possible heart problem)
-          - 2: Left ventricular hypertrophy (thickened heart muscle)
-        - **Maximum Heart Rate Achieved (Thalach)**: Lower rates might indicate heart issues.
-        - **Exercise Induced Angina (Exang)**: Chest pain triggered by exercise.
-        - **ST Depression (Oldpeak)**: Indicates heart stress during exercise.
-        - **Slope of the Peak Exercise ST Segment (Slope)**:
-          - 0: Upsloping — Better heart health.
-          - 1: Flat — Higher risk.
-          - 2: Downsloping — Potential heart disease.
-        - **Number of Major Vessels Colored by Fluoroscopy (CA)**: More blocked vessels indicate higher risk.
-        - **Thalassemia (Thal)**:
-          - 0: Normal blood flow.
-          - 1: Fixed defect — Permanent damage.
-          - 2: Reversible defect — Blood flow can improve.
-
-        This breakdown helps you understand how each feature affects heart disease prediction — empowering you to take control of your heart health.
-        """
-    )
     elif page == "Heart Disease Prediction":
         model = pickle.load(open('heart_disease_model.pkl', 'rb'))
 
@@ -193,7 +110,6 @@ elif hub == "Diabetes Health Hub":
     if page == "Home":
         st.markdown("<h2 style='text-align: center; color: blue;'>Diabetes Health Hub</h2>", unsafe_allow_html=True)
         st.image('diabetes.jpg', use_container_width=True)
-
         st.write("""
         **Diabetes** is a chronic condition that affects how your body processes blood sugar (glucose). 
         If untreated, it can lead to severe complications.
