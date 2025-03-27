@@ -101,7 +101,7 @@ elif hub == "Heart Health Hub":
 
 
     
-   elif page == "About the App":
+   elif page == "About the App:"
     st.title("📌 About the Heart Health Hub")
     st.markdown(
         """
