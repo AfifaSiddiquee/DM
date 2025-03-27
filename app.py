@@ -12,7 +12,7 @@ hub = st.sidebar.radio("Select Hub", ["Main Home Page", "Heart Health Hub", "Dia
 # --------- MAIN PAGE CONTENT --------- #
 if hub == "Main Home Page":
     st.markdown(
-        "<h1 style='text-align: center; color: darkblue;'>Welcome to CardioMetabolic Care</h1>", 
+        "<h1 style='text-align: center; color: white;'>Welcome to CardioMetabolic Care</h1>", 
         unsafe_allow_html=True
     )
 
@@ -30,14 +30,14 @@ if hub == "Main Home Page":
            - Uses medical history, lifestyle factors, and key biomarkers to assess an individual's likelihood of developing cardiovascular diseases.  
            - Provides preventive recommendations based on risk levels.  
 
-        2. **💙 Diabetes Risk Analyzer**  
+        2. **🫀 Diabetes Risk Analyzer**  
            - Evaluates personal health metrics to predict the chances of developing diabetes.  
            - Offers lifestyle suggestions and early intervention strategies.  
 
         ### **Impact on the Healthcare Industry**  
-        - **🔍 Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
-        - **📊 Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
-        - **💡 Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
+        - ** Early Detection & Prevention:** Helps users and healthcare providers detect risks before symptoms appear.  
+        - ** Data-Driven Insights:** Uses AI models to analyze health trends and improve diagnosis accuracy.  
+        - ** Personalized Health Monitoring:** Encourages proactive healthcare management with tailored recommendations.  
 
         CardioMetabolic Care aims to **bridge the gap between technology and healthcare**, empowering individuals to take charge of their well-being with science-backed insights.  
 
