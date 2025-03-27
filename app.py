@@ -251,34 +251,7 @@ elif hub == "Diabetes Health Hub":
         
         ### Understanding the Features
         Each input in the prediction form has a specific medical significance:
-        - **Age**: Heart disease risk increases with age.
-        - **Sex**: Men are generally at higher risk earlier in life; women's risk rises after menopause.
-        - **Chest Pain Type (CP)**: 
-          - 0: Typical Angina — Chest pain due to reduced blood flow to the heart.
-          - 1: Atypical Angina — Chest pain that doesn’t fit the classic pattern.
-          - 2: Non-anginal Pain — Pain unrelated to the heart.
-          - 3: Asymptomatic — No chest pain.
-        - **Resting Blood Pressure (Trestbps)**: High blood pressure can overwork the heart.
-        - **Cholesterol Level (Chol)**: High cholesterol leads to plaque buildup in arteries.
-        - **Fasting Blood Sugar (FBS)**: > 120 mg/dl indicates possible diabetes, increasing heart risk.
-        - **Resting Electrocardiographic Results (Restecg)**: Measures heart's electrical activity.
-          - 0: Normal
-          - 1: ST-T wave abnormality (possible heart problem)
-          - 2: Left ventricular hypertrophy (thickened heart muscle)
-        - **Maximum Heart Rate Achieved (Thalach)**: Lower rates might indicate heart issues.
-        - **Exercise Induced Angina (Exang)**: Chest pain triggered by exercise.
-        - **ST Depression (Oldpeak)**: Indicates heart stress during exercise.
-        - **Slope of the Peak Exercise ST Segment (Slope)**:
-          - 0: Upsloping — Better heart health.
-          - 1: Flat — Higher risk.
-          - 2: Downsloping — Potential heart disease.
-        - **Number of Major Vessels Colored by Fluoroscopy (CA)**: More blocked vessels indicate higher risk.
-        - **Thalassemia (Thal)**:
-          - 0: Normal blood flow.
-          - 1: Fixed defect — Permanent damage.
-          - 2: Reversible defect — Blood flow can improve.
 
-        This breakdown helps you understand how each feature affects heart disease prediction — empowering you to take control of your heart health.
         """
     )
 
