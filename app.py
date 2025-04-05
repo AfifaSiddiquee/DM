@@ -252,6 +252,19 @@ elif hub == "Diabetes Health Hub":
         
         ### Understanding the Features
         Each input in the prediction form has a specific medical significance:
+        features = {
+    "Pregnancies": "Number of times the patient has been pregnant.",
+    "Glucose": "Plasma glucose concentration during a glucose tolerance test.",
+    "Blood Pressure": "Diastolic blood pressure (mm Hg).",
+    "Skin Thickness": "Triceps skin fold thickness (mm).",
+    "Insulin": "2-Hour serum insulin (mu U/ml).",
+    "BMI": "Body Mass Index (weight in kg / height in m²).",
+    "Diabetes Pedigree Function": "Score based on family diabetes history.",
+    "Age": "Age of the individual in years."
+}
+
+for feature, desc in features.items():
+    st.markdown(f"**{feature}**  \n{desc}")
 
         """
     )
