@@ -259,7 +259,8 @@ elif hub == "Diabetes Health Hub":
     
 
     elif page == "Diabetes Disease Prediction":
-        model = pickle.load(open('diabetes_prediction_model.pkl', 'rb'))
+        import joblib
+        model = joblib.load('diabetes_prediction_model.pkl')
 
         st.markdown("<h1 style='text-align: center; color: #FF5733;'>Diabetes Risk Prediction</h1>", unsafe_allow_html=True)
         st.markdown("Enter the details below to predict the likelihood of diabetes:")
