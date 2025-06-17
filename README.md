@@ -1,7 +1,7 @@
 #  CardioMetabolic Care  
 **A Machine Learning-Based Health Risk Prediction System**
 
- **Interactive App**: [CardioMetabolic Care · Streamlit](#)
+ **Interactive App**: [https://aa3ddkewfnrzh6pnafybg9.streamlit.app/]
 
 ---
 
