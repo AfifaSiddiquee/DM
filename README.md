@@ -1,7 +1,7 @@
-# 💓 CardioMetabolic Care  
+#  CardioMetabolic Care  
 **A Machine Learning-Based Health Risk Prediction System**
 
-🌐 **Interactive App**: [CardioMetabolic Care · Streamlit](#)
+ **Interactive App**: [CardioMetabolic Care · Streamlit](#)
 
 ---
 
@@ -11,7 +11,7 @@ CardioMetabolic Care is an AI-driven health assessment platform that predicts ri
 
 ---
 
-## ✅ Key Outcomes
+## 📌 Key Outcomes
 
 - Developed **two predictive models** for heart disease and diabetes with high accuracy  
 - Designed an **intuitive web interface** for easy user interaction  
@@ -19,7 +19,7 @@ CardioMetabolic Care is an AI-driven health assessment platform that predicts ri
 
 ---
 
-## 🧠 1. Introduction
+## 📌 1. Introduction
 
 ### 1.1 Background  
 Cardiovascular diseases and diabetes are top global health concerns. WHO reports CVDs cause 17.9 million deaths/year, and diabetes affects over 422 million people. Early diagnosis can reduce risks, yet timely assessments are often inaccessible.
@@ -42,7 +42,7 @@ Clinical diagnosis is often time-consuming and expensive. There's a lack of simp
 
 ---
 
-## 📚 2. Literature Review
+## 📌 2. Literature Review
 
 ### 2.1 Existing Solutions  
 Tools like IBM Watson Health and Google Health exist, but often require medical knowledge or institutional setup, making them inaccessible to individuals.
@@ -60,7 +60,7 @@ Tools like IBM Watson Health and Google Health exist, but often require medical 
 
 ---
 
-## ⚙️ 3. Methodology
+## 📌 3. Methodology
 
 ### 3.1 Data Collection & Preprocessing
 
@@ -89,14 +89,14 @@ Tools like IBM Watson Health and Google Health exist, but often require medical 
 
 ---
 
-## 📊 4. Results & Discussion
+## 📌 4. Results & Discussion
 
 ### 4.1 Model Performance
 
 | Model             | Accuracy (Test Set) |
 |------------------|---------------------|
 | Heart Disease     | 88%                 |
-| Diabetes          | 82%                 |
+| Diabetes          | 86%                 |
 
 ### 4.2 Key Features
 
@@ -116,7 +116,7 @@ Tools like IBM Watson Health and Google Health exist, but often require medical 
 
 ---
 
-## 🏁 5. Conclusion & Future Work
+## 📌 5. Conclusion & Future Work
 
 ### 5.1 Conclusion  
 CardioMetabolic Care showcases the power of AI for preventive health. It provides fast, accurate, and user-friendly health assessments, empowering users to monitor their health proactively.
@@ -130,14 +130,3 @@ CardioMetabolic Care showcases the power of AI for preventive health. It provide
 - Multi-language support  
 
 ---
-
-## 📁 Project Structure
-
-```bash
-CardioMetabolic-Care/
-│
-├── app.py                   # Main Streamlit app
-├── heart_disease_model.pkl  # Serialized heart model
-├── diabetes_model.pkl       # Serialized diabetes model
-├── requirements.txt         # Project dependencies
-└── README.md                # Project documentation
